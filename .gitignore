@@ -398,3 +398,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.idea/.idea.Blind75LeetCode/.idea/.gitignore
+/.idea/.idea.Blind75LeetCode/.idea/indexLayout.xml
