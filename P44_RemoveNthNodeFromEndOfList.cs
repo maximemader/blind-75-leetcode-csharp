@@ -44,11 +44,4 @@ public class P44_RemoveNthNodeFromEndOfList
         public int val = val;
         public ListNode next = next;
     }
-
-    public void Test()
-    {
-        var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        var n = 2;
-        var result = RemoveNthFromEnd(head, n);
-    }
 }
