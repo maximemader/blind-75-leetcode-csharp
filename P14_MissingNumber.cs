@@ -15,7 +15,7 @@ public class P14_MissingNumber
         // return nums.Aggregate((nums.Length * (nums.Length + 1)) / 2, (current, t) => current - t);
         
         // Gauss' formula for the sum of the first n numbers.
-        var sum = (nums.Length * (nums.Length + 1)) / 2;
+        var sum = nums.Length * (nums.Length + 1) / 2;
 
         // Subtract all the numbers in the array from the sum.
         for (var i = 0; i < nums.Length; ++i)

@@ -7,4 +7,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="Sandbox\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Sandbox\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Sandbox\**" />
+    </ItemGroup>
+
 </Project>
