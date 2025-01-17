@@ -6,7 +6,8 @@ namespace Blind75LeetCode;
 /// </summary>
 public class P48_RotateImage
 {
-    public void Rotate(int[][] matrix) {
+    public void Rotate(int[][] matrix) 
+    {
         // Matrix is a square matrix
         var length = matrix.Length;
         

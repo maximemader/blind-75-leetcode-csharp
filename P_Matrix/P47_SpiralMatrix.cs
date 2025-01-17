@@ -6,7 +6,8 @@ namespace Blind75LeetCode;
 /// </summary>
 public class P47_SpiralMatrix
 {
-    public IList<int> SpiralOrder(int[][] matrix) {
+    public IList<int> SpiralOrder(int[][] matrix) 
+    {
         if(matrix.Length == 0 || matrix[0].Length == 0)
             return new List<int>();
         
