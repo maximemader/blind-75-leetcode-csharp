@@ -2,6 +2,7 @@
 // ReSharper disable ConvertToPrimaryConstructor
 // ReSharper disable ClassNeverInstantiated.Local
 // ReSharper disable ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+// ReSharper disable FieldCanBeMadeReadOnly.Local
 #pragma warning disable CS8603 // Possible null reference return.
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 namespace Blind75LeetCode;

@@ -1,6 +1,7 @@
 // ReSharper disable InconsistentNaming
 // ReSharper disable ConvertToPrimaryConstructor
 // ReSharper disable ClassNeverInstantiated.Local
+// ReSharper disable FieldCanBeMadeReadOnly.Local
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 namespace Blind75LeetCode;
 
@@ -10,7 +11,7 @@ namespace Blind75LeetCode;
 /// </summary>
 public class P61_SameTree
 {
-    private bool IsSameTree(TreeNode p, TreeNode q) 
+    private bool IsSameTree(TreeNode? p, TreeNode? q) 
     {
         if(p == null && q == null)
             return true;
