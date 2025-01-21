@@ -7,8 +7,10 @@ public class SandboxTests
     [Fact]
     public void Sandbox()
     {
-        P53_ValidAnagram validAnagram = new();
+        P36_MergeIntervals sut = new();
         
-        Assert.True(validAnagram.IsAnagram("anagram", "nagaram"));
+        var actual = sut.Merge([[1,4],[0,2],[3,5]]);
+        
+        Assert.True(actual.SequenceEqual([[0,5]]));
     }
 }
