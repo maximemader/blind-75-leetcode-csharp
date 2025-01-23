@@ -6,8 +6,39 @@
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 namespace Blind75LeetCode;
 
+/// <summary>
+/// Binary Tree Level Order Traversal
+/// https://leetcode.com/problems/binary-tree-level-order-traversal/
+/// </summary>
 public class P64_BinaryTreeLevelOrderTraversal
 {
+    private IList<IList<int>> LevelOrder(TreeNode root) 
+    {
+        var result = new List<IList<int>>();
+        
+        if (root == null)
+            return result;
+        
+        var queue = new Queue<(TreeNode Node, int Level)>();
+        
+        queue.Enqueue((root, 0));
+        
+        while (queue.TryDequeue(out var current))
+        {
+            if (result.Count == current.Level)
+                result.Add([]);
+            
+            result[current.Level].Add(current.Node.val);
+            
+            if (current.Node.left != null)
+                queue.Enqueue((current.Node.left, current.Level + 1));
+            
+            if (current.Node.right != null)
+                queue.Enqueue((current.Node.right, current.Level + 1));
+        }
+        
+        return result;
+    }
     
     private class TreeNode 
     {
