@@ -14,7 +14,24 @@ public class P63_BinaryTreeMaximumPathSum
 {
     private int MaxPathSum(TreeNode root)
     {
-        throw new Exception();
+        var max = root.val;
+
+        DFS(root, ref max);
+        
+        return max;
+    }
+
+    private int DFS(TreeNode node, ref int max)
+    {
+        if (node == null)
+            return 0;
+        
+        var left = Math.Max(0, DFS(node.left, ref max));
+        var right = Math.Max(0, DFS(node.right, ref max));
+        
+        max = Math.Max(max, left + right + node.val);
+        
+        return Math.Max(left, right) + node.val;
     }
     
     private class TreeNode 
