@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blind75LeetCode", "Blind75LeetCode.csproj", "{2FC829D7-4A90-4DAF-B1A3-AB3AE4473C23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{4EAF2718-74CA-453F-A67A-004E6DCE9D37}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,9 +12,5 @@ Global
 		{2FC829D7-4A90-4DAF-B1A3-AB3AE4473C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC829D7-4A90-4DAF-B1A3-AB3AE4473C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC829D7-4A90-4DAF-B1A3-AB3AE4473C23}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EAF2718-74CA-453F-A67A-004E6DCE9D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EAF2718-74CA-453F-A67A-004E6DCE9D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EAF2718-74CA-453F-A67A-004E6DCE9D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EAF2718-74CA-453F-A67A-004E6DCE9D37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
